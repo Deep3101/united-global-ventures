@@ -12,11 +12,11 @@ public class ReverseArrayList {
         list.add(2);
         list.add(3);
 
-        Iterator<Integer> iterator = list.iterator();
-
-        while (iterator.hasNext()){
-            System.out.println(iterator.next());
-        }
+//        Iterator<Integer> iterator = list.iterator();
+//
+//        while (iterator.hasNext()){
+//            System.out.println(iterator.next());
+//        }
 
         Collections.reverse(list);
         System.out.println(list);

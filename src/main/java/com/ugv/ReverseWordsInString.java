@@ -30,5 +30,15 @@ public class ReverseWordsInString {
         }
 
         System.out.println(chars);
+
+        String string = "Hello, World !.";
+        String[] tokens = string.split("(?<=\\W)|(?=\\W)");
+        StringBuilder reverseWordss = new StringBuilder();
+
+        for (int i = tokens.length - 1; i >=0; i --){
+            reverseWordss.append(tokens[i]);
+        }
+
+        System.out.println(reverseWordss);
     }
 }

@@ -25,11 +25,15 @@ public class AddElemInArr {
 
         System.out.println("Element added at the end : " + Arrays.toString(newArr));
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < position; i++) {
             newArr[i] = arr[i];
         }
 
         newArr[position] = newElem;
+
+        for (int i = position; i < arr.length; i++) {
+            newArr[i + 1] = arr[i];
+        }
 
         System.out.println("Element added to the specific position : " + Arrays.toString(newArr));
     }
